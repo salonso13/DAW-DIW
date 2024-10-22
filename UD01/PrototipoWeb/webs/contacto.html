@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../style/style-contac.css">
+</head>
+
+<nav>
+    <div class="nav">
+        <div class="images">
+            <img id="img1" src="../imgs/logo-white.png" href="../index.html">
+            <img id="img2" src="../imgs/logo-black.png" href="../index.html">
+        </div>
+        <div class="opciones">
+            <a>Carrito</a>
+            <a>Cuestionario de satisfacción</a>
+            <a>Noticias</a>
+            <a class="activo">Contacto</a>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <div align="center" class="divform">
+        <h1 align="center" class="title">Formulario de contacto</h1>
+        <form action="/submit" method="POST" class="formulario">
+            <input id="nomb" placeholder="Nombre" type="text" min="1" max="20">
+            <input id="ape" placeholder="Apellidos" type="text" min="1" max="30">
+            <br>
+            <input id="emp" placeholder="Nombre de la empresa" type="text">
+            <input id="tel" placeholder="Número de telefono" type="number">
+            <br>
+            <input id="asun" placeholder="Asunto" type="text">
+            <br>
+            <input id="email" placeholder="Email" type="email" min="1" max="20">
+            <br>
+            <textarea placeholder="Mensaje" maxlength="300"></textarea>
+            <br>
+            <button>Enviar</button>
+        </form>
+    </div>
+</body>
+<footer>
+    <div id="copy">© 2024, Alonsoformatic's, Inc. o sus afiliados</div>
+</footer>
+
+</html>

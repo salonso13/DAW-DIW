@@ -1,0 +1,146 @@
+/*
+* El azul se suele asocia con eficacia, calidad, calma,seriedad, fortaleza, sabiduría, 
+* lealtad, fuerza, productividad, confianza y seguridad. Y noralmente suelen utilizar
+* este color empresas de bancos, ciencias, tecnologia, etc. Por lo que al ser mi empresa de 
+* informatica me he decantado por esta paleta de colores, ya que mi idea es que de la 
+* sesacion de que es una empresa formal, de calidad y eficaz en sus trabajos.
+*/
+
+body {
+    background: url("../imgs/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .nav {
+    display: flex;
+    font-weight: bold;
+    overflow: hidden; 
+    background-color: #2081C3;
+  }
+  .images, .opciones{
+    width: 80%;
+  }
+  
+  .nav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .nav a:hover {
+    background-color: #BED8D4;
+    color: black;
+    font-weight: lighter;
+    cursor: pointer;
+  }
+  
+  .nav a.activo {
+    background-color: #63D2FF;
+    color: white;
+  }
+
+  .images{
+    position: relative;
+    cursor: pointer;
+    width: 10%;
+  }
+
+  #img1{
+    width: 250px;
+    padding-left: 1%;
+    position: absolute;
+  }
+
+  #img2{
+    width: 250px;
+    padding-left: 1%;
+    left: 0%;
+    top: 0%;
+  }
+
+  .images:hover #img1{
+    display: none;
+  }
+  .images:hover #img2{
+    display: block;
+  }
+
+  .title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 180%;
+  }
+
+  .divform{
+    margin: 1.5% 0% 0% 0%;
+    background-color: #f7f9f9d0;
+    border: solid 0.1rem #2f4858;
+    border-radius: 0.3rem;
+    margin-left: 35%;
+    margin-right: 35%;
+    box-shadow: 0 4px 8px black;
+  }
+
+  .formulario{
+    padding: 0.5rem;
+    display: inline-flexbox;
+  }
+  .formulario input{
+    height: 2rem;
+    width: 43%;
+    margin: 2%;
+    border: solid 0.1rem #2f4858;
+    border-radius: 0.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #asun{
+    width: 93%;
+  }
+
+  #email{
+    width: 93%;
+  }
+
+  .formulario textarea{
+    margin: 0.5rem; 
+    width: 93%;
+    height: 8rem;
+    border: solid 0.1rem #2f4858;
+    border-radius: 0.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .formulario button{
+    margin-left: 75%;
+    color: white;
+    height: 2rem;
+    width: 20%;    
+    background-color: #2081C3;
+    border: solid 0.1rem;
+    border-radius: 0.3rem;
+  }
+
+  .formulario button:hover{
+    font-weight: bold;
+    background-color: #78D5D7;
+    cursor: pointer;
+  }
+
+  #copy {
+    text-align: center;
+    background-color: #2081C3;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3.5%;
+    color: white;
+  }

@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Display: NONE */
+.none {
+    display: none;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+/* Visibility: HIDDEN */
+.hidden {
+    visibility: hidden;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}
+
+/* Display: INLINE */
+.inline {
+    display: inline;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+/* Display: BLOCK */
+.block {
+    display: block;
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}
+
+/* Display: INLINE-BLOCK */
+.inline-block {
+    display: inline-block;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+}
+
+/* Position: STATIC */
+.static {
+    position: static;
+    background-color: cyan;
+    width: 100px;
+    height: 100px;
+}
+
+/* Position: RELATIVE */
+.relative {
+    position: relative;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+/* Position: ABSOLUTE */
+.absolute {
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+.abs1 {
+    left: 20px;
+}
+
+.abs2 {
+    left: 200px;
+}
+
+/* Position: STICKY */
+.sticky-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: beige;
+    width: 1300px;
+    height: 600px;
+}
+
+.sticky {
+    position: sticky;
+    top: 10px;
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+}
+
+/* Float */
+.float {
+    background-color: tomato;
+    width: 100px;
+    height: 100px;
+}
+
+.float1 {
+    float: left;
+}
+
+.float2 {
+    float: right;
+}
+
+/* Position: FIXED */
+.fixed {
+    position: fixed;
+    background-color: chocolate;
+    width: 100px;
+    height: 100px;
+}
+
+.fix1 {
+    left: 0;
+    top: 25%;
+}
+
+.fix2 {
+    right: 0;
+    top: 25%;
+}

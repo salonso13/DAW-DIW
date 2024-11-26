@@ -1,0 +1,135 @@
+/* Variables */
+:root {
+    --color-negro: rgb(255, 0, 0);
+}
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    color: rgb(0, 102, 204);
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Variables */
+#variable {
+    color: var(--color-negro);
+}
+
+/* Selectores */
+a[rel] {
+    color: rgb(255, 0, 0);
+}
+a[src] {
+    color: rgb(255, 255, 0);
+}
+
+/* Selectores con matching */
+a[rel*='eba'] {
+    color: blue;
+}
+
+a[lang|='es'] {
+    color: rgb(0, 255, 13);
+}
+
+a[rel^='E'] {
+    color: rgb(0, 0, 0);
+}
+
+a[rel$="n"] {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+a[rel*="s"] {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(0, 255, 255);
+}
+
+/* Borde para los encabezados */
+h1 ~ h4 {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Pseudo-elementos */
+p::first-line {
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: 2em;
+    color: rgb(255, 69, 0);
+}
+
+p::before {
+    content: "👌 ";
+}
+
+p::after {
+    content: " 🥰";
+}
+
+p::selection {
+    font-weight: bolder;
+    color: rgb(138, 43, 226);
+    background-color: blue;
+}
+
+/* Ejemplo de pseudo-clase de posición */
+p:nth-child(2) {
+    color: white;
+}
+
+/* Selectores avanzados adicionales */
+
+/* Selector para elemento vacío */
+.container .child-element:empty {
+    width: 100px;
+    height: 50px;
+    background-color: lightgrey;
+    border: 2px dashed grey;
+}
+
+/* Selector para el primer hijo de un contenedor */
+.container p:first-child {
+    color: purple;
+    font-weight: bold;
+}
+
+/* Selector para el último hijo */
+.container p:last-child {
+    color: darkorange;
+    font-style: italic;
+}
+
+/* Selector para el segundo párrafo */
+.container p:nth-of-type(2) {
+    color: green;
+    text-decoration: underline;
+}
+
+/* Selector para el primer elemento del tipo párrafo, contando desde el final */
+.container p:nth-last-of-type(1) {
+    font-size: 1.2em;
+    color: navy;
+}
